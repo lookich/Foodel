@@ -1,15 +1,33 @@
 {
   "name": "Foodel",
   "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development ./bin/webpack-dev-server --progress",
+    "build": "NODE_ENV=production ./bin/webpack -p --progress"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
     "@rails/webpacker": "^4.0.2",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-polyfill": "^6.26.0",
+    "history": "^4.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "webpack": "^4.30.0",
     "webpack-dev-server": "^3.3.1"
   }
 }
